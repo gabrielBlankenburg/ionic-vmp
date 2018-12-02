@@ -1,3 +1,18 @@
 page-home {
+	.background {
+		background-image: url('../assets/imgs/logo.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		// background-color: #f9952e;
+		background-color: #ef7900;
+	}
 
+	.form {
+		opacity: .6;
+		margin-bottom: 2%;
+	}
+
+	.forms {
+		margin-top: 30vh;
+	}
 }

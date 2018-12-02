@@ -1,14 +1,25 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      VMP - Text
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding class='background'>
+	<div class="forms">
+		<ion-item class="form">
+			<ion-label>Top text</ion-label>
+			<ion-input type="text" [(ngModel)]="topText" name="topText"></ion-input>
+		</ion-item>
+		<ion-item class="form">
+			<ion-label>Middle text</ion-label>
+			<ion-input type="text" [(ngModel)]="middleText" name="middleText"></ion-input>
+		</ion-item>
+		<ion-item class="form">
+			<ion-label>Bottom text</ion-label>
+			<ion-input type="text" [(ngModel)]="bottomText" name="bottomText"></ion-input>
+		</ion-item>	
+		<button ion-button round (click)="sendText()">Send Text</button>
+	</div>
 </ion-content>
